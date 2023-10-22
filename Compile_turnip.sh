@@ -21,7 +21,7 @@ cd ${BUILD_PREFIX}
 cp /usr/include/libdrm/drm.h /usr/include/libdrm/drm_mode.h /usr/include/
 export MESA_PREFIX=${BUILD_PREFIX}/mesa-turnip-feature-a7xx-basic-support
 
-if [ ! -f $MESA_PREFIX ]; then
+if [ -e $MESA_PREFIX ]; then
    echo -e "${RED}${BOLD}${MESA_PREFIX} already exists${NC}${NORMAL}"
 else
    echo -e "${CYAN}${BOLD}Cloning turnip drivers${NC}${NORMAL}"
