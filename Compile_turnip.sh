@@ -10,7 +10,7 @@ BOLD=$(tput bold)
 NORMAL=$(tput sgr0)
 
 export BUILD_PREFIX=~/turnip_drivers
-if [ ! -f $BUILD_PREFIX ]; then
+if [ -e $BUILD_PREFIX ]; then
    echo -e "${RED}${BOLD}${BUILD_PREFIX} already exists${NC}${NORMAL}"
 else
    mkdir ${BUILD_PREFIX}
