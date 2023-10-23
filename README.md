@@ -1,2 +1,2 @@
-# Termux-scripts
-Some scripts to configure stuff in termux
+# Linux-scripts
+Some scripts to manage some things 🙂
